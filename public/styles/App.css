@@ -46,7 +46,7 @@
   }
   
   #aboutBut, #portfolioBut {
-    width:-moz-fit-content;
+    padding: 0.6em 1.2em;
     width:fit-content;
     aspect-ratio:32/9;
     font-size:200%;
