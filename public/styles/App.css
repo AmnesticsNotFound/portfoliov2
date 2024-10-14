@@ -1,0 +1,265 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+#root {
+    display:flex;
+    flex-direction: column;
+    height:300vh;
+    width:99vw;
+    margin:0px;
+    overflow-x:hidden;
+  }
+  
+  #homeDiv {
+    display:flex;
+    flex-direction:column;
+    padding:0px;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: rgb(107, 107, 107);
+    background-image: linear-gradient(rgb(107, 107, 107), rgb(60, 60, 60));
+  }
+  
+  #logoHeader {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  
+  #homeDiv h1 {
+    font-size: 400%;
+    color:white;
+  }
+  
+  
+  
+  #buttons {
+    display:flex;
+    flex-direction:column;
+    justify-self: center;
+    align-items: center;
+    gap:10vh;
+  }
+  
+  #aboutBut, #portfolioBut {
+    width:-moz-fit-content;
+    width:fit-content;
+    aspect-ratio:32/9;
+    font-size:200%;
+    max-width:320px;
+    color:white;
+  }
+  
+  #aboutBut {
+    background-color: rgb(60, 60, 60);
+  }
+  
+  #portfolioBut {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  #about {
+    width:99vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding:0px;
+    margin:0px;
+    border-style:solid;
+    background-color: rgb(60, 60, 60);
+    background-image: linear-gradient(rgb(60, 60, 60), rgb(0, 0, 0));
+  }
+  
+  #aboutImgText{
+    border-style:solid;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding:0px;
+    margin:0px;
+    gap:10vw;
+  }
+  
+  #selfie {
+    border-style: solid;
+    border-radius: 1000px;
+    aspect-ratio: 1;
+    width:30vw;
+    max-width:700px;
+    padding:0px;
+    margin:0px;
+  }
+  
+  #aboutText {
+    padding:0px;
+    margin:0px;
+    width:60vw;
+    max-width:1000px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+  
+  #aboutText h1 {
+    padding:0px;
+    margin:0px;
+  }
+  
+  #aboutText h2 {
+    padding:0px;
+    margin:0px;
+    
+  }
+  
+  #greeting:before {
+    
+    content: "Hello";
+
+    animation: 8s textChange 0s infinite;
+  }
+
+  @keyframes textChange {
+    0% {}
+    25% {}
+    50% {content:"Hi";}
+    75% {}
+    100% {content:"Hola";}
+  }
+
+  
+
+  #skillsGroup {
+    display:flex;
+    width:60vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:5vh;
+  }
+  
+  #skillsGroup h1{
+    font-size:2vh;
+    margin-bottom:2vh;
+  }
+  #skills {
+    border-style: solid;
+    border-color:white;
+    margin:0px;
+    padding:0px;
+    width:60vw;
+    max-width:1000px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:5vh;
+   
+  
+  
+  }
+  #skills img {
+    aspect-ratio: 1;
+    
+    max-width:150px;
+    
+  }
+
+  @keyframes fadeOut{
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeIn{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #guest {
+    animation: fadeOut 3s 0s 1 forwards;
+    }
+
+    #guest2 {
+      animation: fadeIn 3s 0s 1 forwards;
+      }
+  
+
+    #faceReveal {
+      animation: fadeIn 3s 3s 1 forwards;
+    }
+
+
+
+  
+
+
+
+  #portfolio {
+    
+  }
+
+  @keyframes logo-scale {
+    from {
+      transform:scale(0.7);
+    }
+    to {
+      transform:scale(1);
+    }
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  #brain {
+    content:url('https://i.imgur.com/FMDSNUu.png');
+    object-fit: cover;
+    }
+
+  #brain:hover {
+      content:url('https://i.imgur.com/ZMZlHyl.gif');
+      object-fit: cover;
+    }
+
+  #logoImg{
+    animation: shake;
+    animation-iteration-count:infinite;
+    animation-duration: 2s;
+  }
+  #eyes{
+    content:url('https://imgur.com/BoX4c7Q.png');
+    object-fit: cover;
+    }
+    
+  #eyes:hover{
+    content:url('https://i.imgur.com/DGZrMjv.gif');
+    object-fit: cover;
+    }
+
+
+
