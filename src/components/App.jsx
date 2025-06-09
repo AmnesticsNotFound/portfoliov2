@@ -20,6 +20,7 @@ import faceReveal from '../assets/faceReveal.mp4';
 import guest from '../assets/guest.png';
 import linkedIn from '../assets/linkedIn.png';
 import selfie from '../assets/selfie2.png';
+import wishlist from "../assets/wishlist.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -182,7 +183,7 @@ function App() {
 
       <div id="portfolio" className="w-[100vw] h-[100vh] flex flex-col justify-center items-center">
         <h1 className="text-5xl">My Projects</h1>
-        <h3 className="italic">(render.com sites may take a while to load)</h3>
+        <h3 className="italic">(render.com sites may take a while to load initially due to me using the fre tier)</h3>
         <div className="w-[80vw] max-w-[1000px] h-[80vh] border-solid flex flex-col justify-center items-center mt-[5vh]">
 
           <div className="w-[100%] flex justify-center items-center gap-[15%]">
@@ -208,7 +209,7 @@ function App() {
             <div className="flex flex-col justify-center items-center">
               
               <Link className="flex flex-col justify-center items-center" to="https://wishlist-5uhp.onrender.com/" target="_blank">
-                <img onMouseOver={reveal4} onMouseLeave={hide4} className ="rounded-[30px] aspect-[1] w-1/5" src="/src/assets/wishlist.png" alt="" />
+                <img onMouseOver={reveal4} onMouseLeave={hide4} className ="rounded-[30px] aspect-[1] w-1/5" src={wishlist} alt="" />
                 <h1 className="invisible">Wishlisters</h1>
               </Link>
             </div>
