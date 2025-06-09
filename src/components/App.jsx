@@ -110,7 +110,7 @@ function App() {
     <>
       <div id="homeDiv">
         <div id="logoHeader">
-          <img className="aspect-[.9] w-[150px] rounded-full" src={selfie} alt="" />
+          <img className="aspect-[.9] w-[130px] rounded-full" src={selfie} alt="" />
           <h1>Adrian Castillo</h1>
         </div>
         <div id="buttons">
