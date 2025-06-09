@@ -248,12 +248,12 @@
     }
 
     #parrot {
-      content:url('src/assets/parrot.png');
+      content:url('/src/assets/parrot.png');
       object-fit: cover;
       }
   
     #parrot:hover {
-        content:url('src/assets/parrot.gif');
+        content:url('/src/assets/parrot.png');
         object-fit: cover;
       }
 
