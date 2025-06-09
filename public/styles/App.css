@@ -253,7 +253,7 @@
       }
   
     #parrot:hover {
-        content:url('/src/assets/parrot.png');
+        content:url('/src/assets/parrot.gif');
         object-fit: cover;
       }
 

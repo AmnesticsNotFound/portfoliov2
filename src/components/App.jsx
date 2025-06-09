@@ -208,7 +208,7 @@ function App() {
             <div className="flex flex-col justify-center items-center">
               
               <Link className="flex flex-col justify-center items-center" to="https://wishlist-5uhp.onrender.com/" target="_blank">
-                <img onMouseOver={reveal4} onMouseLeave={hide4} className ="rounded-[30px] aspect-[1] w-1/5" src="src/assets/wishlist.png" alt="" />
+                <img onMouseOver={reveal4} onMouseLeave={hide4} className ="rounded-[30px] aspect-[1] w-1/5" src="/src/assets/wishlist.png" alt="" />
                 <h1 className="invisible">Wishlisters</h1>
               </Link>
             </div>
