@@ -244,7 +244,18 @@
   #brain:hover {
       content:url('https://i.imgur.com/ZMZlHyl.gif');
       object-fit: cover;
+      
     }
+
+    #parrot {
+      content:url('src/assets/parrot.png');
+      object-fit: cover;
+      }
+  
+    #parrot:hover {
+        content:url('src/assets/parrot.gif');
+        object-fit: cover;
+      }
 
   #logoImg{
     animation: shake;
